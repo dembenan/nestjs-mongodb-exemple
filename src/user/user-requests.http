@@ -1,0 +1,55 @@
+
+###ALL REQUESTS FOR USER
+
+
+
+### GET ALL
+GET  http://localhost:3001/user/all
+
+### GET BY ROLE
+GET  http://localhost:3001/user/role/prestataire
+
+
+
+###CREATE
+Post http://localhost:3001/user/create
+content-type: application/json
+
+{
+    "nom": "Admin22",
+    "prenom": "admin633",
+    "description": "",
+    "username": "admin69999987",
+    "password": "12345",
+    "role": "admin"
+}
+
+###LOGIN
+Post http://localhost:3001/user/login
+content-type: application/json
+
+{
+    "username": "sory",
+    "password": "sor"
+}
+
+
+### UPDATE
+PUT  http://localhost:3001/user/update/615b375e51cbb89579dd6306
+content-type: application/json
+
+{
+    "nom": "user1updated",
+    "prenom": "user1",
+    "description": "",
+    "username": "use",
+    "password": "1234"
+}
+
+
+### DELETE
+DELETE  http://localhost:3001/user/delete/615b36ce6d8ea8fc77e1d2f4
+
+
+
+

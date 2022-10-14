@@ -1,0 +1,35 @@
+###ALL REQUESTS FOR PLAT
+
+
+###get all
+
+GET  http://localhost:3001/plat/all
+
+
+### create
+Post http://localhost:3001/plat/create
+content-type: application/json
+
+{
+    "nom":"plat5",
+    "description":"descriptionplat5",
+    "prix":"200",
+    "image":""
+}
+
+
+
+### update
+PUT http://localhost:3001/plat/update/615b70d9bdbaf15e12b603f2
+content-type: application/json
+
+{
+    "nom":"plat4Updated",
+    "description":"descriptionplat4",
+    "prix":"500",
+    "image":""
+}
+
+###Delete
+
+DELETE   http://localhost:3001/plat/delete/615b70d9bdbaf15e12b603f2

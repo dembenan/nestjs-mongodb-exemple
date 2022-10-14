@@ -1,0 +1,7 @@
+{
+    "src": "schemas",
+    "orm": "mongoose",
+    "lang": "ts",
+    "mode": "module",
+    "modulesDir": "src"
+}

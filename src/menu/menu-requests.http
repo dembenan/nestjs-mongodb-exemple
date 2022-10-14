@@ -1,0 +1,35 @@
+###ALL REQUESTS FOR MENU
+
+
+###get all
+
+GET  http://localhost:3001/menu/all
+
+
+### create
+Post http://localhost:3001/menu/create
+content-type: application/json
+
+{
+    "nom":"menu4",
+    "description":"descriptionmenu4",
+    "dateDebut":"2021-10-12",
+    "dateFin":"2021-10-20",
+    "plats": ["615b44203889b11a428ae226","615b47ddf88ee6b8c058f0d7"]
+}
+
+### update
+PUT http://localhost:3001/menu/update/615b622b18d26310df33d38e
+content-type: application/json
+
+{
+    "nom":"menu4updated",
+    "description":"descriptionmenu4",
+    "dateDebut":"2021-10-12",
+    "dateFin":"2021-10-20",
+    "plats": ["615b44203889b11a428ae226","615b47ddf88ee6b8c058f0d7"]
+}
+
+###Delete
+
+DELETE   http://localhost:3001/menu/delete/615b622b18d26310df33d38e
